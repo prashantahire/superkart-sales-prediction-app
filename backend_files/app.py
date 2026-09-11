@@ -30,8 +30,9 @@ def predict_product_revenue():
         'Store_Size': product_data['Store_Size'],
         'Store_Location_City_Type': product_data['Store_Location_City_Type'],
         'Store_Type': product_data['Store_Type'],
-        'Product_Id_Type': product_data['Product_Id_char'],
-        'Food_Type': product_data['Product_Type_Category']
+        'Store_Id': product_data['Store_Id'], # Added Store_Id
+        'Product_Id_Type': product_data['Product_Id_Type'], # Corrected from Product_Id_char
+        'Food_Type': product_data['Food_Type'] # Corrected from Product_Type_Category
     }
 
     # Convert the extracted data into a DataFrame
