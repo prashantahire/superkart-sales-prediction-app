@@ -43,8 +43,10 @@ docker run -d --name backend --network rppapp-network -p 7860:7860 backend
 
 
 5. Start the frontend container
-```
+
 bash
 docker run -d --name frontend --network rppapp-network -p 8501:8501 frontend
+
+```
 
 [Wait till the "Open Browser" option is not shown]
