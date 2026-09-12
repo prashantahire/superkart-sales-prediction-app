@@ -18,7 +18,7 @@ docker run -d --name frontend \
 The frontend is then available at `http://localhost:8501`.
 
 Bash Commands (Week 2):
-
+```bash
 1. Remove old containers if they exist
 bash
 docker rm -f frontend backend 2>/dev/null || true
@@ -43,6 +43,7 @@ docker run -d --name backend --network rppapp-network -p 7860:7860 backend
 
 
 5. Start the frontend container
+```
 bash
 docker run -d --name frontend --network rppapp-network -p 8501:8501 frontend
 
